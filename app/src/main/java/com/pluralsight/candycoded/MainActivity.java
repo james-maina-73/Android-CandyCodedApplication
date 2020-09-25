@@ -92,8 +92,10 @@ public class MainActivity extends AppCompatActivity {
 
         if( id == R.id.info){
             startActivity(new Intent(this,InfoActivity.class));
+            return true;
         }
-        return super.onOptionsItemSelected(item);
+            return super.onOptionsItemSelected(item);
+
     }
 
     private void addCandiesToDatabase(Candy[] candies) {
