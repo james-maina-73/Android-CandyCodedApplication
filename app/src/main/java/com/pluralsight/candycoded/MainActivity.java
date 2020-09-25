@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
 
          Intent intent = new  Intent(MainActivity.this,InfoActivity.class);
 
-        
+        startActivity(intent);
         return super.onOptionsItemSelected(item);
     }
 
