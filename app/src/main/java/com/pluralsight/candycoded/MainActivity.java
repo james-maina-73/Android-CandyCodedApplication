@@ -84,19 +84,24 @@ public class MainActivity extends AppCompatActivity {
     // TODO - Task 1 - Show Store Information Activity
     // ***
 
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
-        int id = item.getItemId();
-
-        if( id == R.id.info){
-            startActivity(new Intent(this,InfoActivity.class));
-            return true;
-        }
-            return super.onOptionsItemSelected(item);
-
+        return super.onOptionsItemSelected(item);
     }
+
+
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//
+//
+//        int id = item.getItemId();
+//
+//        if( id == R.id.info){
+//            startActivity(new Intent(MainActivity.this,InfoActivity.class));
+//            return true;
+//        }
+//            return super.onOptionsItemSelected(item);
+//    }
 
     private void addCandiesToDatabase(Candy[] candies) {
         SQLiteDatabase db = candyDbHelper.getWritableDatabase();
