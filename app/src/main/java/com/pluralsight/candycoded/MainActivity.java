@@ -88,11 +88,11 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle item selection
         if (item.getItemId() == R.id.info) {
-            Intent intent = new Intent(this, InfoActivity.class);
-            startActivity(intent);
+           startActivity(new Intent(this, InfoActivity.class));
+
             return true;
         }
-        return super.onOptionsItemSelected(item);
+        return (super.onOptionsItemSelected(item));
     }
 
     private void addCandiesToDatabase(Candy[] candies) {
